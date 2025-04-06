@@ -1,23 +1,33 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class GameIns : MonoBehaviour
 {
+    public static GameIns Instance{get;private set;}
 public event EventHandler  OnInteractAct;
 public event EventHandler  OnInteractAltAct;
+public event EventHandler OnpauseAction;
 
     private  PlayerAction playerActions;
     private void Awake(){
+        Instance=this;
         playerActions=new PlayerAction();
         playerActions.Player.Enable();
         playerActions.Player.Interaction.performed+=Interact_performed;
         playerActions.Player.InteractAlt.performed+=InteractAlt_performed;
+        playerActions.Player.Pause.performed+=Paused_perform;
     }
 
-    private void InteractAlt_performed(InputAction.CallbackContext context)
+    private void Paused_perform(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    {
+    OnpauseAction?.Invoke(this,EventArgs.Empty);
+    }
+
+    private void InteractAlt_performed(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {OnInteractAltAct?.Invoke(this,EventArgs.Empty);
     }
 

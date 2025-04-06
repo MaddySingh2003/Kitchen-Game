@@ -42,6 +42,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\player\player.cs" />
      <Compile Include="Assets\Scripts\Plates\PlateIconSingleUi.cs" />
+     <Compile Include="Assets\Scripts\Starts\GameStartCDUi.cs" />
      <Compile Include="Assets\Scripts\Plates\Bars\ProgressbarUI.cs" />
      <Compile Include="Assets\Scripts\RecipeS\FryingRecipe.cs" />
      <Compile Include="Assets\Scripts\Counter\Delivery\DeliveryManager.cs" />
@@ -58,8 +59,10 @@
      <Compile Include="Assets\Scripts\Counter\BaseCounter.cs" />
      <Compile Include="Assets\Scripts\Camera\Visual\StoveVisual.cs" />
      <Compile Include="Assets\Scripts\Plates\Bars\ICProgress.cs" />
+     <Compile Include="Assets\Scripts\Starts\GameOverUI.cs" />
      <Compile Include="Assets\Scripts\Counter\Delivery\DelivreyCounter.cs" />
      <Compile Include="Assets\Scripts\RecipeS\Burning.cs" />
+     <Compile Include="Assets\Scripts\Starts\Loader.cs" />
      <Compile Include="Assets\Scripts\Plates\PlateKObj.cs" />
      <Compile Include="Assets\Scripts\Plates\PlateComplete.cs" />
      <Compile Include="Assets\Scripts\Camera\Visual\SelectCVisual.cs" />
@@ -69,8 +72,11 @@
      <Compile Include="Assets\Scripts\RecipeS\RecipeListSO.cs" />
      <Compile Include="Assets\Scripts\RecipeS\RecipeSO.cs" />
      <Compile Include="Assets\Scripts\Camera\LookAt.cs" />
+     <Compile Include="Assets\Scripts\Starts\GameClockUI.cs" />
+     <Compile Include="Assets\Scripts\Starts\MainMenuUi.cs" />
      <Compile Include="Assets\Scripts\GameIns.cs" />
      <Compile Include="Assets\Scripts\Starts\KGameManeger.cs" />
+     <Compile Include="Assets\Scripts\Starts\LoderCallBack.cs" />
      <Compile Include="Assets\Scripts\Plates\PlateIconUI.cs" />
      <Compile Include="Assets\Scripts\Plates\Plates_Visual.cs" />
      <Compile Include="Assets\Scripts\Audio\SoundManager.cs" />

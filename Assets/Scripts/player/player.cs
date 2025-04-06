@@ -26,7 +26,7 @@ get; private set;
    public class OnSelectCouChangeEventArgs:  EventArgs{
       public BaseCounter selectedCounter;
    }
-   [SerializeField] private float mSpeed=7f;
+   [SerializeField] private float mSpeed=9f;
    [SerializeField] private GameIns gameInput;
    [SerializeField] private Transform KitchObjHOldPoint;
    [SerializeField] private LayerMask counterLayerM;
@@ -46,13 +46,14 @@ get; private set;
     }
 
     private void GameIns_OnInteracAlttAct(object sender, EventArgs e)
-    { if(selectedCounter!=null){
+    {if(!KGameManager.Instance.IsGamePlay())return;
+       if(selectedCounter!=null){
          selectedCounter.InteractAlt(this);//
       }
     }
 
     private void GameIns_OnInteractAct(object sender, System.EventArgs e)
-    {
+    {if(!KGameManager.Instance.IsGamePlay())return;
       if(selectedCounter!=null){
          selectedCounter.Interact(this);//
       }

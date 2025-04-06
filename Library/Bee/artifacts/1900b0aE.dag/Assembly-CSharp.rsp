@@ -418,7 +418,13 @@
 "Assets/Scripts/RecipeS/KObj/KitchneObj.cs"
 "Assets/Scripts/RecipeS/RecipeListSO.cs"
 "Assets/Scripts/RecipeS/RecipeSO.cs"
+"Assets/Scripts/Starts/GameClockUI.cs"
+"Assets/Scripts/Starts/GameOverUI.cs"
+"Assets/Scripts/Starts/GameStartCDUi.cs"
 "Assets/Scripts/Starts/KGameManeger.cs"
+"Assets/Scripts/Starts/Loader.cs"
+"Assets/Scripts/Starts/LoderCallBack.cs"
+"Assets/Scripts/Starts/MainMenuUi.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
